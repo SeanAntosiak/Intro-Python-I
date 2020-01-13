@@ -22,3 +22,18 @@ and does the following:
 import sys
 import calendar
 from datetime import datetime
+
+text = input('Format like: month [year]')
+
+args = text.split(' ')
+if args == ['']:
+  cal = calendar.monthcalendar(datetime.today().year, datetime.today().month)
+  print(cal)
+elif len(args) == 1:
+  cal = calendar.monthcalendar(datetime.today().year, int(args[0]))
+  print(cal)
+elif len(args) == 2:
+  cal = calendar.monthcalendar(eval(args[1])[0], int(args[0]))
+  print(cal)
+else:
+  print('please enter in a format such as: "month [year]"' )
