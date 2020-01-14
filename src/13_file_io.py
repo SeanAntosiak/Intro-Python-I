@@ -17,9 +17,12 @@ foo.close()
 # then close the file. Open up "bar.txt" and inspect it to make
 # sure that it contains what you expect it to contain
 
-bar = open('bar.txt', 'r+')
+
+bar = open('bar.txt', 'w+')
 bar.write('line1\n')
 bar.write('line2\n')
 bar.write('line3\n')
+bar.close()
+bar = open('bar.txt', 'r+')
 print(bar.readlines())
 bar.close()
