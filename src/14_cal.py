@@ -36,4 +36,4 @@ elif len(args) == 2:
   cal = calendar.monthcalendar(eval(args[1])[0], int(args[0]))
   print(cal)
 else:
-  print('please enter in a format such as: "month [year]"' )
+  print('please enter in a format such as: "month [year]"')

@@ -14,6 +14,9 @@ for i in y:
   x.append(i)
 print(x)
 
+x.extend(y)
+x
+
 # Change x so that it is [1, 2, 3, 4, 9, 10]
 # YOUR CODE HERE
 x.remove(8)
